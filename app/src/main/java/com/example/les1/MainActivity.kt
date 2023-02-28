@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         buttonClickMe.setOnClickListener {
             txtHello.text = getString(R.string.you_clicked_me)
+
+
         }
     }
 
