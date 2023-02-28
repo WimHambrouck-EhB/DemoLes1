@@ -16,17 +16,13 @@ class MainActivity : AppCompatActivity() {
         buttonClickMe = findViewById(R.id.btn_clickme)
         val txtHello : TextView = findViewById(R.id.txt_hello)
 
-        txtHello.text = getString(R.string.hello_kotlin)
-
         buttonClickMe.setOnClickListener {
             txtHello.text = getString(R.string.you_clicked_me)
-
-
         }
     }
 
     private fun changeButtonText()
     {
-        buttonClickMe.text = "hallo"
+        buttonClickMe.text = getString(R.string.hello)
     }
 }
